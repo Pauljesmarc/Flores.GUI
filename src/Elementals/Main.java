@@ -16,7 +16,7 @@ public class Main {
             input = sc.nextLine();
             switch (input) {
                 case "Copper":
-                    elements.add(new TransitionMetal.Copper());
+//                    elements.add(new TransitionMetal.Copper());
                     break;
                 // TODO add more cases here
             }
@@ -45,13 +45,7 @@ public class Main {
                     // TODO print state of elements
                     break;
                 case "Sort by Weight":
-                    Collections.sort(elements);
-                    for (Element e : elements) {
-                        System.out.println(e + " = " + e.getAtomicWeight());
-                    }
-                    if (elements.isEmpty()) {
-                        System.out.println("No elements present");
-                    }
+                    // TODO
                     break;
             }
         } while (!input.equals("DONE"));
