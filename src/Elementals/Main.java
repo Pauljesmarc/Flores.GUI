@@ -16,7 +16,8 @@ public class Main {
             input = sc.nextLine();
             switch (input) {
                 case "Copper":
-//                    elements.add(new TransitionMetal.Copper());
+                    // UNCOMMENT these when you want to solve the problem already
+                    // elements.add(new TransitionMetal.Copper());
                     break;
                 // TODO add more cases here
             }
@@ -30,13 +31,13 @@ public class Main {
                     // TODO Radiate here
                     break;
                 case "Magnetize":
-                    // TODO Radiate here
+                    // TODO Magnetize here
                     break;
                 case "Conduct":
-                    // TODO Radiate here
+                    // TODO Conduct here
                     break;
                 case "Alloy Components":
-                    // TODO Radiate here
+                    // TODO Alloy Components here
                     break;
                 case "Get State":
                     System.out.print("Enter temperature: ");
@@ -45,7 +46,16 @@ public class Main {
                     // TODO print state of elements
                     break;
                 case "Sort by Weight":
-                    // TODO
+                    // UNCOMMENT these when you want to solve the problem already
+                    /*
+                    Collections.sort(elements);
+                    for (Element e : elements) {
+                        System.out.println(e + " = " + e.getAtomicWeight());
+                    }
+                    if (elements.isEmpty()) {
+                        System.out.println("No elements present");
+                    }
+                     */
                     break;
             }
         } while (!input.equals("DONE"));
