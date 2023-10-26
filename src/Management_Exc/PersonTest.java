@@ -271,18 +271,18 @@ class PersonTest {
         persons.add(new Manager("Mary", 24, 50200));
         persons.add(new Manager("Claire", 27, 52600));
         persons.add(new Customer("Felix", 52));
-        assertThrows(IllegalArgumentException.class, ()->{
+        assertThrows(ClassCastException.class, ()->{
             Main.customerSpeak(persons, "Mary", "Jeshiel");
             Main.customerSpeak(persons, "Jewel", "Felix");
         });
         try {
             Main.customerSpeak(persons, "Mary", "Jeshiel");
-        } catch (Exception e) {
+        } catch (ClassCastException e) {
             assertEquals(e.getMessage(), "Mary is not a customer");
         }
         try {
             Main.customerSpeak(persons, "Jewel", "Felix");
-        } catch (Exception e) {
+        } catch (ClassCastException e) {
             assertEquals(e.getMessage(), "Felix is not an employee");
         }
     }
