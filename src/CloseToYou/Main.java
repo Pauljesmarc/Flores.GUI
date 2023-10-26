@@ -9,11 +9,9 @@ public class Main {
         System.out.print("Enter number of points: ");
         int size = sc.nextInt();
         ArrayList<Point> points = new ArrayList<>();
-        // UNCOMMENT these when you want to solve the problem already
-        /*
         for (int i = 0; i < size; i++) {
             System.out.print("Enter point " + (i+1) + " : ");
-            points.add(new Point(sc.nextInt(), sc.nextInt()));
+//            points.add(new Point(sc.nextInt(), sc.nextInt()));
         }
 
         System.out.println("USING COMPARABLE");
@@ -31,10 +29,9 @@ public class Main {
             if (y < -9 || y > 9) {
                 break;
             }
-            Point target = new Point(x, y);
-            print(points, target);
+//            Point target = new Point(x, y);
+//            print(points, target);
         }
-         */
     }
 
     static void print(ArrayList<Point> points, Point target) {
@@ -45,7 +42,6 @@ public class Main {
         }
         // TODO sort using Comparable
         int index = 0;
-        // UNCOMMENT these when you want to solve the problem already
         /*
         for (int j = 9; j >= -9; j--) {
             for (int i = -9; i <= 9; i++) {
@@ -73,6 +69,7 @@ public class Main {
             }
             System.out.println();
         }
+
          */
     }
 }
